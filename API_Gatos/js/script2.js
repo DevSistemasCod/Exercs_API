@@ -49,7 +49,7 @@ function obterImagemGato(url, imagemGato) {
     fetch(url)
         .then(function (resposta) {
             if (!resposta.ok) {
-                throw an Error('Erro ao carregar imagem de gato.');
+                throw Error('Erro ao carregar imagem de gato.');
             }
             return resposta.json();
         })
